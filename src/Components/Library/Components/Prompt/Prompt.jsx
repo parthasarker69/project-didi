@@ -57,7 +57,7 @@ export function Prompt({ prompt }) {
                     <Typography variant="h4" color="blue-gray" className="text-[15px] ">
                         {promptName}
                     </Typography>
-                    <Typography variant="lead" color="gray" className="mt-3 font-normal text-[8px]" >
+                    <Typography variant="lead" color="gray" className="mt-3 font-normal text-[10px]" >
                         {description}
                     </Typography>
                 </CardBody>

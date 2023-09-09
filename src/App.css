@@ -1,7 +1,13 @@
+.navitems a li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
 .navitems a.active li {
     background-color: black !important;
     color: white !important;
-    margin-bottom: 8px;
+  
 }
 
 .navitems a:hover li {
@@ -9,4 +15,11 @@
     color: black;
     transition-duration: 400;
 
+}
+
+.grow{
+    flex-grow: 2;
+}
+.rest-screen{
+    height: calc(100vh - 130px) !important;
 }

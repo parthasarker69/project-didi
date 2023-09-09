@@ -30,8 +30,8 @@ export function TopNavbar() {
 
 
     return (
-        <div>
-            <Navbar className=" px-4 py-1 shadow-white mt-5">
+        <div className="w-full sticky top-0 right-0 z-50">
+            <Navbar className="px-4 py-2 shadow-white z-50">
                 <div className="flex flex-wrap items-center justify-between gap-y-4 text-blue-gray-900">
                     <div className="relative flex w-full gap-2 md:w-max">
                         <div className="flex items-center gap-2 bg-[#FAFAFA]">

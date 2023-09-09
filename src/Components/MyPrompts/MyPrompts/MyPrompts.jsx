@@ -101,13 +101,13 @@ const MyPrompts = () => {
     ]
 
     return (
-        <div>
-            <div className="flex">
-                <div className="w-1/4">
+        <div className="grow">
+            <div className="flex ">
+                <div className="w-1/4 ">
                     <div>
                         <h1 className="flex gap-3 text-[25px] font-extrabold items-center mt-[31px] mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar> My Prompts </h1>
                     </div>
-                    <div className="bg-[#424242] w-1/6 h-screen mb-3 items-center pt-5 absolute rounded-md">
+                    <div className="bg-[#424242]  mb-3 items-center py-5 rounded-md">
                         <button className="bg-white text-black py-1 ps-5 w-[80px] rounded-md flex items-center text-xs relative ms-auto right-3">Edit<FiEdit3 ></FiEdit3></button>
                         <div className="text-center">
                             <img src={person} className="bg-[#424242] rounded-full w-[120px] h-[120px] mx-auto " alt="" />
@@ -116,7 +116,7 @@ const MyPrompts = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full ">
+                <div className="w-3/4">
                     <div className="w-2/3 ms-3 me-auto mt-[86px]">
                         <Tabs value={activeTab}>
                             <TabsHeader
