@@ -18,14 +18,38 @@ export default function Login() {
             <Card className="w-1/3 mx-auto">
                 <h1 className="p-10 text-[18px] font-semibold text-black">Login</h1>
                 <CardBody className="flex flex-col gap-4 w-5/6 ms-auto pt-0">
-                    <div className="flex items-center gap-2 font-medium text-[14px] text-black">
-                        <p>Email</p>
-                        <Input label="Email" size="md" className="" />
-                    </div>
-                    <div className="flex items-center gap-2 font-medium text-[14px] text-black">
-                        <p>Password</p>
-                        <Input label="Password" size="lg" />
-                    </div>
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Email</p>
+                            </td>
+                            <td>
+                                <Input
+                                    type="email"
+                                    color="lightBlue"
+                                    size="regular"
+                                    outline={false}
+                                    label="Email"
+                                />
+                            </td>
+                        </tr>
+                        <br />
+                        <tr>
+                            <td>
+                                <p>Password</p>
+                            </td>
+                            <td>
+                                <Input
+                                    type="password"
+                                    color="lightBlue"
+                                    size="regular"
+                                    outline={false}
+                                    label="Password"
+                                />
+                            </td>
+                        </tr>
+                    </table>
 
                 </CardBody>
                 <CardFooter className="pt-0 ms-auto">

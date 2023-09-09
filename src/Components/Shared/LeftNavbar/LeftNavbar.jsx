@@ -9,7 +9,7 @@ const LeftNavbar = () => {
 
 
     return (
-        <div className='pt-5 ps-3 w-1/5 bg-[#d7d7d7] bg-[#7e7e7e] h-auto'>
+        <div className='pt-5 ps-3 w-1/5 bg-[#FAFAFA] h-auto'>
             <div>
                 <div className='flex items-center text-base	font-bold'>
                     <img src={logo} alt="" />

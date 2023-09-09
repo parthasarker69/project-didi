@@ -52,7 +52,7 @@ export function UseCase() {
                         </Tab>
                     ))}
                 </TabsHeader>
-                <TabsBody
+                {/* <TabsBody
                     animate={{
                         initial: { y: 250 },
                         mount: { y: 0 },
@@ -64,7 +64,7 @@ export function UseCase() {
                             {desc}
                         </TabPanel>
                     ))}
-                </TabsBody>
+                </TabsBody> */}
             </Tabs>
         </div>
     );

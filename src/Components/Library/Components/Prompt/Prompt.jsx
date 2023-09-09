@@ -36,7 +36,7 @@ export function Prompt({ prompt }) {
 
     return (
         <>
-            <Card className="max-w-[24rem] overflow-hidden my-[5px] rounded-sm relative" onClick={() => handleOpen("xl")}>
+            <Card className=" cursor-pointer max-w-[24rem] overflow-hidden my-[5px] rounded-sm relative" onClick={() => handleOpen("xl")}>
                 <CardHeader
                     floated={false}
                     shadow={false}
