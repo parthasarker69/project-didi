@@ -23,3 +23,7 @@
 .rest-screen{
     height: calc(100vh - 160px) !important;
 }
+
+.modal {
+    max-width: 1200px !important;
+}

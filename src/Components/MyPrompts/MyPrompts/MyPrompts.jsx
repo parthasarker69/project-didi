@@ -92,6 +92,55 @@ const MyPrompts = () => {
             image: img2,
         },
         {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
+            id: 7,
+            edit: true,
+            promptName: 'Prompt Name',
+            description: 'Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description Prompt Description ',
+            image: img2,
+        },
+        {
             id: 8,
             edit: true,
             promptName: 'Prompt Name',
@@ -102,8 +151,8 @@ const MyPrompts = () => {
 
     return (
         <div className="grow">
-            <div className="flex ">
-                <div className="w-1/4 ">
+            <div className="flex">
+                <div className="w-1/4">
                     <div>
                         <h1 className="flex gap-3 text-[25px] font-extrabold items-center mt-[31px] mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar> My Prompts </h1>
                     </div>
@@ -116,7 +165,7 @@ const MyPrompts = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-3/4">
+                <div className="w-full">
                     <div className="w-2/3 ms-3 me-auto mt-[86px]">
                         <Tabs value={activeTab}>
                             <TabsHeader

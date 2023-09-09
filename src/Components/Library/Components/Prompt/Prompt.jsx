@@ -36,7 +36,7 @@ export function Prompt({ prompt }) {
 
     return (
         <>
-            <Card className=" cursor-pointer max-w-[24rem] overflow-hidden my-[5px] rounded-sm relative" onClick={() => handleOpen("xl")}>
+            <Card className=" cursor-pointer max-w-[24rem] overflow-hidden my-[5px] rounded-sm relative" onClick={() => handleOpen("lg")}>
                 <CardHeader
                     floated={false}
                     shadow={false}
@@ -66,11 +66,11 @@ export function Prompt({ prompt }) {
             <>
                 <Dialog
                     open={
-                        size === "xl"
+                        size === "lg"
                     }
-                    size={size || "md"}
+                    size={size || "lg"}
                     handler={handleOpen}
-                    className="bg-[#303030] text-white rounded-none"
+                    className="bg-[#303030] text-white rounded-none w-[1200px] modal"
                 >
                     <div className="flex ">
                         <div className="w-1/2 p-[25px]">
