@@ -1,0 +1,12 @@
+.navitems a.active li {
+    background-color: black !important;
+    color: white !important;
+    margin-bottom: 8px;
+}
+
+.navitems a:hover li {
+    background-color: #e6e6e6;
+    color: black;
+    transition-duration: 400;
+
+}
