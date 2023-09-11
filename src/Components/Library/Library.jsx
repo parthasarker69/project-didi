@@ -133,19 +133,21 @@ const Library = () => {
         },
     ]
     return (
-        <div className="mt-4 mx-4">
-            <h1 className="flex gap-[15px] items-center text-[25px]"> <FiBook></FiBook> <span className="text-[25px] font-extrabold	">Library - Start-Click-Prompt</span>
-            </h1>
-            <Categories></Categories>
-            <UseCase></UseCase>
-            <div className="grid grid-cols-5 mt-5 gap-[10px]">
+        <div className="mx-4 relative">
+            <div className="h-full sticky top-[82px]  z-50 bg-white">
+                <h1 className="flex gap-[15px] items-center text-[25px]"> <FiBook></FiBook> <span className="text-[25px] font-extrabold	">Bibliothek - Start-Click-Prompt </span>
+                </h1>
+                <Categories></Categories>
+                <UseCase></UseCase>
+            </div>
+            <div className="grid grid-cols-5 mt-5 gap-[10px] relative">
                 {prompts.map(prompt => <Prompt
                     key={prompt.id}
                     prompt={prompt}
                 ></Prompt>)}
             </div>
 
-            
+
 
         </div>
     );

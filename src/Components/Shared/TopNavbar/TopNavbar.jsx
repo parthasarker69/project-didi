@@ -30,23 +30,23 @@ export function TopNavbar() {
 
 
     return (
-        <div className="w-full sticky top-0 right-0 z-50">
-            <Navbar className="px-4 py-2 shadow-white z-50">
+        <div className="w-full sticky top-0 right-0 z-50 bg-white">
+            <Navbar className="px-4 shadow-white z-50 max-w-full">
                 <div className="flex flex-wrap items-center justify-between gap-y-4 text-blue-gray-900">
                     <div className="relative flex w-full gap-2 md:w-max">
                         <div className="flex items-center gap-2 bg-[#FAFAFA]">
                             <p className="ps-4"><BiSearch></BiSearch></p>
-                            <input className="bg-[#FAFAFA] py-3 ps-3 pe-16" type="search" name="" id="" placeholder="Search for Prompt" />
+                            <input className="bg-[#FAFAFA] py-3 ps-3 pe-16" type="search" name="" id="" placeholder="Prompt suchen" />
 
                         </div>
                         <Button size="sm" className="font-extrabold rounded bg-[#E6E6E6] text-black">
-                            Search
+                            Suchen
                         </Button>
 
                     </div>
                     <div className="flex items-center gap-4">
                         <button className="flex items-center text-4 font-bold bg-[#E6E6E6] py-2 px-8 rounded-md" onClick={handleCreate}>
-                            <AiOutlinePlus className="me-1"></AiOutlinePlus>Create
+                            <AiOutlinePlus className="me-1"></AiOutlinePlus>Hinzufügen
                         </button>
                         <img src={person} alt="" />
                         <h2 className="font-bold text-[15px]">Digital Dieter</h2>
@@ -64,7 +64,7 @@ export function TopNavbar() {
                         <DialogHeader className="font-extrabold text-[25px] text-white gap-5 justify-between">
                             <div className="flex items-center gap-4">
                                 <AiOutlinePlus></AiOutlinePlus>
-                                <h2>Create Prompt</h2>
+                                <h2>Prompt hinzufügen</h2>
                             </div>
                             <button>
                                 <ImCross onClick={handleCreate} className="font-thin text-base"></ImCross>
@@ -83,7 +83,7 @@ export function TopNavbar() {
                             </Link>
                             <Link to={'/createCharacter'} onClick={handleCreate}>
                                 <div className=" bg-white text-black p-5 rounded-md">
-                                    <h1 className="text-[25px] font-extrabold pb-3">Character</h1>
+                                    <h1 className="text-[25px] font-extrabold pb-3">Rolle</h1>
                                     <p className="text-[13px] font-thin">Hier wird eine Beschreibung stehen, die dem User
                                         erklärt was ein Prompt ist und warum er sich für diese
                                         Variante entscheiden sollte.

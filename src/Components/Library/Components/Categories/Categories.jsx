@@ -13,7 +13,7 @@ export function Categories() {
             value: "html",
         },
         {
-            label: "Sales",
+            label: "Vertrieb",
             value: "react",
         },
 
@@ -23,7 +23,7 @@ export function Categories() {
         },
 
         {
-            label: "Quality",
+            label: "Qualität",
             value: "angular",
         },
 
@@ -42,9 +42,9 @@ export function Categories() {
     ];
 
     return (
-        <div className="mt-4 w-5/6">
+        <div className="mt-4 w-5/6 ">
             <Tabs id="custom-animation" value="html">
-                <p className="text-[12px] mb-2">Categories</p>
+                <p className="text-[12px] mb-2">Kategorie</p>
                 <TabsHeader>
                     {data.map(({ label, value }) => (
                         <Tab key={value} value={value}>

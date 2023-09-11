@@ -26,16 +26,16 @@ const MyPrompts = () => {
             value: "html",
         },
         {
-            label: "My List",
+            label: "Meine Liste",
             value: "react",
 
         },
         {
-            label: "FavoritesFavorites",
+            label: "Favoriten",
             value: "vue",
         },
         {
-            label: "Liked Prompts",
+            label: "Upvoted Prompts",
             value: "angular",
 
         },
@@ -154,9 +154,9 @@ const MyPrompts = () => {
             <div className="flex">
                 <div className="w-1/4">
                     <div>
-                        <h1 className="flex gap-3 text-[25px] font-extrabold items-center mt-[31px] mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar> My Prompts </h1>
+                        <h1 className="flex gap-3 text-[25px] font-extrabold items-center mt-[31px] mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar>Meine Prompts </h1>
                     </div>
-                    <div className="bg-[#424242]  mb-3 items-center py-5 rounded-md">
+                    <div className="bg-[#424242]  mb-3 items-center py-5 rounded-md h-screen">
                         <button className="bg-white text-black py-1 ps-5 w-[80px] rounded-md flex items-center text-xs relative ms-auto right-3">Edit<FiEdit3 ></FiEdit3></button>
                         <div className="text-center">
                             <img src={person} className="bg-[#424242] rounded-full w-[120px] h-[120px] mx-auto " alt="" />

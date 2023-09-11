@@ -62,11 +62,13 @@ export default function MenuDefault() {
                 {
                     messages.map((message) =>
                         message.role === 'user' ? (
+                            // eslint-disable-next-line react/jsx-key
                             <div className="w-1/2 flex items-center ms-auto right-0 my-5">
                                 <p className="text-[11px] bg-[#424242] text-white p-3 flex items-center px-3 rounded-t-xl rounded-bl-xl min-w-[400px] max-w-[800px]">{message.message}</p>
                                 <img className="w-[60px] h-[60px]" src={img5} alt="" />
                             </div>)
                             : (
+                                // eslint-disable-next-line react/jsx-key
                                 <div className="flex items-center  gap-2 w-2/3">
                                     <img className="w-[40px] h-[40px]" src={img1} alt="" />
                                     <p className="text-[11px] bg-[#424242] text-white p-3 flex items-center px-3 rounded-t-xl rounded-br-xl min-w-[400px] max-w-[800px]">{message.message}</p>
@@ -79,7 +81,7 @@ export default function MenuDefault() {
             </div>
             <div className="w-full p-2 absolute bottom-5 bg-white left-0">
                 <div className="w-3/5 mx-auto flex justify-between border border-black rounded-md px-5 py-1 sticky bottom-0">
-                    <input type="search" name="Send Massege" id="" placeholder="Send Massege" className="p-3 w-full active:outline-none focus:outline-none"></input>
+                    <input type="search" name="Send Massege" id="" placeholder="Nachricht senden" className="p-3 w-full active:outline-none focus:outline-none"></input>
                     <button><IoMdSend className="text-2xl"></IoMdSend></button>
                 </div>
             </div>

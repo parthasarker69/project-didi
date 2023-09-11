@@ -18,11 +18,11 @@ export default function Login() {
             <Card className="w-1/3 mx-auto">
                 <h1 className="p-10 text-[18px] font-semibold text-black">Login</h1>
                 <CardBody className="flex flex-col gap-4 w-5/6 ms-auto pt-0">
-                    
+
                     <table>
-                        <tr>
+                        <tr className="relative">
                             <td>
-                                <p>Email</p>
+                                <p className="w-[50px] absolute bottom-2 left-[30px]">Email</p>
                             </td>
                             <td>
                                 <Input
@@ -37,7 +37,7 @@ export default function Login() {
                         <br />
                         <tr>
                             <td>
-                                <p>Password</p>
+                                <p className="w-[75px]  me-[-15px]">Password</p>
                             </td>
                             <td>
                                 <Input

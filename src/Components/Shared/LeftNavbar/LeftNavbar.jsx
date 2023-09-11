@@ -9,7 +9,7 @@ const LeftNavbar = () => {
 
 
     return (
-        <div className='pt-5 ps-3 w-1/5 bg-[#FAFAFA] h-auto'>
+        <div className='pt-5 ps-3 w-1/5 bg-[#FAFAFA] h-screen sticky top-0'>
             <div>
                 <div className='flex items-center text-base	font-bold'>
                     <img src={logo} alt="" />
@@ -25,7 +25,7 @@ const LeftNavbar = () => {
                     } to={'/library'}>
                         <li className='flex font-extrabold gap-[22px] text-[15px]  p-4 rounded-md items-center'>
                             <FiBook className='text-[16px]'></FiBook>
-                            <a>Library</a>
+                            <a>Bibliothek</a>
                         </li>
                     </NavLink >
                     <NavLink className={
@@ -49,7 +49,7 @@ const LeftNavbar = () => {
                     } to={'/myPrompts'}>
                         <li className='flex font-extrabold gap-[22px] text-[15px]  p-4 rounded-md '>
                             <AiOutlineStar className='text-[18px]'></AiOutlineStar>
-                            <a>My Prompts</a>
+                            <a>Meine Prompts</a>
                         </li>
                     </NavLink >
 

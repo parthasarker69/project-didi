@@ -54,10 +54,10 @@ export function Prompt({ prompt }) {
                     }
                 </CardHeader>
                 <CardBody className="p-[10px]">
-                    <Typography variant="h4" color="blue-gray" className="text-[15px] ">
+                    <Typography variant="h4" color="blue-gray" className="text-[17px] ">
                         {promptName}
                     </Typography>
-                    <Typography variant="lead" color="gray" className="mt-3 font-normal text-[10px]" >
+                    <Typography variant="lead" color="gray" className="mt-3 font-normal text-[14px]" >
                         {description}
                     </Typography>
                 </CardBody>
@@ -70,9 +70,9 @@ export function Prompt({ prompt }) {
                     }
                     size={size || "lg"}
                     handler={handleOpen}
-                    className="bg-[#303030] text-white rounded-none w-[1200px] modal"
+                    className="bg-[#303030] text-white rounded-none w-[1200px] modal 2xl:max-w-[1200px] lg:max-w-[1200px] md:max-w-[1200px] max-w-[1200px] md:w-5/6 lg:w-3/4 2xl:w-3/5 min-w-[90%] md:min-w-[83.333333%] lg:min-w-[1200px] 2xl:min-w-[1200px] "
                 >
-                    <div className="flex ">
+                    <div className="flex max-w-[1200px] mx-auto">
                         <div className="w-1/2 p-[25px]">
                             <div className=" flex ">
                                 <div className="me-[22px] mb-[30px] h-32">
@@ -83,7 +83,7 @@ export function Prompt({ prompt }) {
                                     <p className="text-15px pb-[10px]">Creator’s name</p>
                                     <div className="flex text-[12px]">
                                         <div className="me-3">
-                                            <p>Category</p>
+                                            <p>Kategorie</p>
                                             <p className="bg-white px-[33px] py-[10px] mt-[2px] text-black rounded-md">Marketing</p>
                                         </div>
                                         <div>
@@ -107,27 +107,27 @@ export function Prompt({ prompt }) {
                             </div>
                             <hr className="text-red " />
                             <div>
-                                <p className="py-1 px-10 bg-white w-32 text-black rounded-md mt-3">Promt</p>
-                                <h2 className="my-[22px] text-[18px]">Description</h2>
+                                <p className="py-1 px-10 bg-white w-32 text-black rounded-md mt-3">Prompt</p>
+                                <h2 className="my-[22px] text-[18px]">Beschreibung</h2>
                                 <p className="text-[12px]">Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt. Here is the full description of the Prompt.</p>
                             </div>
                         </div>
 
                         <div className="bg-[#424242] h-100% w-1/2 p-[25px]">
                             <div className="flex justify-between items-center">
-                                <p className="py-1 px-10 bg-white h-full w-32 text-black rounded-md">Promt</p>
+                                <p className="py-1 px-10 bg-white h-full w-32 text-black rounded-md">Prompt</p>
                                 <Button
                                     variant="text"
 
                                     onClick={() => handleOpen(null)}
                                     className="mr-1"
                                 >
-                                    <span className="flex bg-white text-red-900 py-2 gap-2 text-md rounded-sm items-center px-4">Exit <ImCross></ImCross></span>
+                                    <span className="flex bg-white text-red-900 py-2 gap-2 text-md rounded-sm items-center px-4">Abbrechen <ImCross></ImCross></span>
                                 </Button>
                             </div>
                             <p className="bg-[#303030] mt-2 text-[12px] p-3 h-5/7">Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. Here is the prompt displayed. </p>
                             <Link to={'/chat'}>
-                                <button className="flex bg-white text-black  items-center py-[10px] pe-[65px] ps-[55px] rounded-md gap-3 w-2/7 mx-auto mt-5"><RiSendPlane2Fill ></RiSendPlane2Fill>Start Chat</button>
+                                <button className="flex bg-white text-black  items-center py-[10px] pe-[65px] ps-[55px] rounded-md gap-3 w-2/7 mx-auto mt-5"><RiSendPlane2Fill ></RiSendPlane2Fill>Chat starten</button>
                             </Link>
                         </div>
                     </div>

@@ -32,21 +32,21 @@ const CreateCharacter = () => {
     return (
         <div className="bg-[#303030] mt-4 p-10 text-white">
             <div className="flex items-center justify-between">
-                <p className="flex items-center gap-3 text-2xl font-extrabold mb-7"><AiOutlinePlus></AiOutlinePlus>Create Character</p>
+                <p className="flex items-center gap-3 text-2xl font-extrabold mb-7"><AiOutlinePlus></AiOutlinePlus>Prompt hinzufügen</p>
                 <Link to={'/library'}>
-                    <p className="cursor-pointer"><ImCross></ImCross></p>
+                    <p className="cursor-pointer flex items-center gap-4 bg-white text-black py-2 px-4 rounded-md"><span className="text-md font-bold">Abbrechen</span><ImCross></ImCross></p>
                 </Link>
 
             </div>
             <div className="mb-10">
                 <p className="mb-1">Name</p>
                 <div className="w-3/5 text-white bg-white py-2 px-2 border-0 mb-7 rounded-md">
-                    <input className="w-full outline-none text-black " type="text" placeholder={`What is the name of the Character?`} />
+                    <input className="w-full outline-none text-black " type="text" placeholder={`Wie nennt sich der Prompt?`} />
                 </div>
             </div>
 
             <div className="flex w-3/5 justify-between items-center mb-8">
-                <p className="">Which Model Do you want to use? </p>
+                <p className="">Welches Model soll verwendet werden? </p>
                 <Menu>
                     <MenuHandler>
                         <Button className="bg-[#E6E6E6] text-black w-48 text-[15px] flex items-center gap-3 px-9 rounded-none"><img className="w-[23px] h-[23px]" src={img1} alt="" />Model <AiOutlineDown></AiOutlineDown></Button>
@@ -63,22 +63,22 @@ const CreateCharacter = () => {
             <div className="mb-10 w-3/5">
                 <div className="flex items-center justify-between">
                     <p className="mb-1">Prompt</p>
-                    <p className="flex items-center gap-2">What is a good prompt?<AiOutlineQuestionCircle className="text-xl"></AiOutlineQuestionCircle></p>
+                    <p className="flex items-center gap-2">Was macht einen guten Prompt aus<AiOutlineQuestionCircle className="text-xl"></AiOutlineQuestionCircle></p>
                 </div>
                 <div className=" h-[183px] text-white bg-white py-2 px-2 border-0 mb-7 rounded-md">
-                    <input className="w-full outline-none text-black " type="text" placeholder={`Enter your prompt here.`} />
+                    <input className="w-full outline-none text-black " type="text" placeholder={`Prompt hier eingeben.`} />
                 </div>
             </div>
             <div className="mb-10">
-                <p className="mb-1">Description</p>
+                <p className="mb-1">Beschreibung</p>
                 <div className="w-3/5 h-[183px] text-white bg-white py-2 px-2 border-0 mb-7 rounded-md">
-                    <input className="w-full outline-none text-black " type="text" placeholder={`How do you want to describe the prompt? What are the goals?}`} />
+                    <input className="w-full outline-none text-black " type="text" placeholder={`Beschreibung des Prompts. Welche Aufgabe wird erledigt? Welche Ziele werden erreicht?`} />
                 </div>
             </div>
             <div className="mb-5">
-                <p className="mb-2 ">Category</p>
+                <p className="mb-2 ">Kategorie</p>
                 <div className="">
-                    <button className="bg-white text-black py-1 px-4 rounded-md text-[14px] me-2 hover:bg-[#E6E6E6]">Markertting</button>
+                    <button className="bg-white text-black py-1 px-4 rounded-md text-[14px] me-2 hover:bg-[#E6E6E6]">Marketing</button>
                     <button className="bg-white text-black py-1 px-4 rounded-md text-[14px] me-2 hover:bg-[#E6E6E6]">Vertrieb</button>
                     <button className="bg-white text-black py-1 px-4 rounded-md text-[14px] me-2 hover:bg-[#E6E6E6]">Controlling</button>
                     <button className="bg-white text-black py-1 px-4 rounded-md text-[14px] me-2 hover:bg-[#E6E6E6]">Qualität</button>
@@ -100,7 +100,7 @@ const CreateCharacter = () => {
                 </div>
             </div>
             <div className="my-6">
-                <p className="mb-2 ">Choose Picture</p>
+                <p className="mb-2 ">Bild auswählen</p>
                 <div className="flex gap-3">
                     <img src={colorPlate1} alt="" />
                     <img src={colorPlate2} alt="" />
@@ -111,7 +111,7 @@ const CreateCharacter = () => {
             </div>
             <div className="mt-10">
                 <button className="bg-white py-2 px-6 rounded-md text-black flex items-center gap-3 ">
-                    <AiOutlinePlus></AiOutlinePlus>Create Character
+                    <AiOutlinePlus></AiOutlinePlus>Prompt hinzufügen
                 </button>
             </div>
         </div>
