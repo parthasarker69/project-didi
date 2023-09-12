@@ -31,16 +31,41 @@ const messages = [
         role: 'user',
         message: 'Messages from the user',
 
-    }, {
-        id: 4,
-        role: 'ai',
-        message: 'Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here. Answers from AI Model are shown here.'
+    },
+    
+    {
+        id: 3,
+        role: 'user',
+        message: 'Messages from the user',
+
     },
     {
         id: 5,
-        role: 'user',
+        role: 'ai',
         message: 'Messages from the user. lorem dummy messages for testing only. huhahahah',
-    }
+    },
+    
+    {
+        id: 3,
+        role: 'user',
+        message: 'Messages from the user',
+
+    },
+    
+    {
+        id: 5,
+        role: 'ai',
+        message: 'Messages from the user. lorem dummy messages for testing only. huhahahah',
+    },
+    
+    
+ 
+    {
+        id: 3,
+        role: 'user',
+        message: 'Messages from the user',
+
+    },
 ]
 
 export default function MenuDefault() {

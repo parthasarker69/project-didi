@@ -21,9 +21,12 @@
     flex-grow: 2;
 }
 .rest-screen{
-    height: calc(100vh - 160px) !important;
+    height: calc(100vh - 180px) !important;
 }
 
+.rest-screen-my-prompts{
+    height: calc(100vh - 110px) !important;
+}
 .modal {
     max-width: 1200px !important;
 }

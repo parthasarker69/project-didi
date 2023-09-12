@@ -150,13 +150,13 @@ const MyPrompts = () => {
     ]
 
     return (
-        <div className="grow">
-            <div className="flex relative">
-                <div className="w-1/4 sticky h-screen top-[82px]">
+        <div className="grow max-h-screen rest-screen-my-prompts mt-5 overflow-hidden">
+            <div className="flex h-full">
+                <div className="w-1/4 h-full mt-[31px]">
                     <div>
                         <h1 className="flex gap-3 text-[24px] font-extrabold items-center mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar>Meine Prompts </h1>
                     </div>
-                    <div className="bg-[#424242]  mb-3 items-center py-5 rounded-md h-full">
+                    <div className="bg-[#424242] items-center pt-5 rounded-md h-full">
                         <button className="bg-white text-black py-1 ps-5 w-[80px] rounded-md flex items-center text-xs relative ms-auto right-3">Edit<FiEdit3 ></FiEdit3></button>
                         <div className="text-center">
                             <img src={person} className="bg-[#424242] rounded-full w-[120px] h-[120px] mx-auto " alt="" />
@@ -165,8 +165,8 @@ const MyPrompts = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full">
-                    <div className="w-2/3 ms-3 me-auto mt-[86px] ">
+                <div className="w-full h-full">
+                    <div className="max-w-full bg-white left-0 z-50 ms-3 me-auto mt-[60px] ">
                         <Tabs value={activeTab} className=''>
                             <TabsHeader
                                 className="rounded-none border-b border-blue-gray-50 bg-transparent p-0 "
@@ -195,11 +195,13 @@ const MyPrompts = () => {
                             </TabsBody>
                         </Tabs>
                     </div>
-                    <div className="grid grid-cols-4 mt-5 ms-4 gap-[10px] clear-left mb-3 me-16">
-                        {prompts.map(prompt => <Prompt
-                            key={prompt.id}
-                            prompt={prompt}
-                        ></Prompt>)}
+                    <div className="overflow-auto h-[500px] max-h-[500px]">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 mt-5 ms-4 gap-[10px]  mb-3 me-16">
+                            {prompts.map(prompt => <Prompt
+                                key={prompt.id}
+                                prompt={prompt}
+                            ></Prompt>)}
+                        </div>
                     </div>
                 </div>
             </div>
