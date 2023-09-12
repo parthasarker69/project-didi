@@ -151,12 +151,12 @@ const MyPrompts = () => {
 
     return (
         <div className="grow">
-            <div className="flex">
-                <div className="w-1/4">
+            <div className="flex relative">
+                <div className="w-1/4 sticky h-screen top-[82px]">
                     <div>
-                        <h1 className="flex gap-3 text-[25px] font-extrabold items-center mt-[31px] mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar>Meine Prompts </h1>
+                        <h1 className="flex gap-3 text-[24px] font-extrabold items-center mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar>Meine Prompts </h1>
                     </div>
-                    <div className="bg-[#424242]  mb-3 items-center py-5 rounded-md h-screen">
+                    <div className="bg-[#424242]  mb-3 items-center py-5 rounded-md h-full">
                         <button className="bg-white text-black py-1 ps-5 w-[80px] rounded-md flex items-center text-xs relative ms-auto right-3">Edit<FiEdit3 ></FiEdit3></button>
                         <div className="text-center">
                             <img src={person} className="bg-[#424242] rounded-full w-[120px] h-[120px] mx-auto " alt="" />
@@ -166,10 +166,10 @@ const MyPrompts = () => {
                     </div>
                 </div>
                 <div className="w-full">
-                    <div className="w-2/3 ms-3 me-auto mt-[86px]">
-                        <Tabs value={activeTab}>
+                    <div className="w-2/3 ms-3 me-auto mt-[86px] ">
+                        <Tabs value={activeTab} className=''>
                             <TabsHeader
-                                className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
+                                className="rounded-none border-b border-blue-gray-50 bg-transparent p-0 "
                                 indicatorProps={{
                                     className:
                                         "bg-transparent border-b-2 border-gray-900 shadow-none rounded-none",
@@ -195,7 +195,7 @@ const MyPrompts = () => {
                             </TabsBody>
                         </Tabs>
                     </div>
-                    <div className="grid grid-cols-4 mt-5 ms-4 gap-[10px] clear-left w-5/6 mb-3">
+                    <div className="grid grid-cols-4 mt-5 ms-4 gap-[10px] clear-left mb-3 me-16">
                         {prompts.map(prompt => <Prompt
                             key={prompt.id}
                             prompt={prompt}
