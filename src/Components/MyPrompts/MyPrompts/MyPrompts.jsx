@@ -152,7 +152,7 @@ const MyPrompts = () => {
     return (
         <div className="grow max-h-screen rest-screen-my-prompts mt-5 overflow-hidden">
             <div className="flex h-full">
-                <div className="w-1/4 h-full mt-[31px]">
+                <div className="w-1/4 h-full mt-[15px]">
                     <div>
                         <h1 className="flex gap-3 text-[24px] font-extrabold items-center mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar>Meine Prompts </h1>
                     </div>
@@ -195,8 +195,8 @@ const MyPrompts = () => {
                             </TabsBody>
                         </Tabs>
                     </div>
-                    <div className="overflow-auto h-[500px] max-h-[500px]">
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 mt-5 ms-4 gap-[10px]  mb-3 me-16">
+                    <div className="overflow-auto rest-screen">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 mt-5 ms-4 gap-[10px]  mb-3 pb-16 me-8">
                             {prompts.map(prompt => <Prompt
                                 key={prompt.id}
                                 prompt={prompt}

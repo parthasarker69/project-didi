@@ -30,3 +30,6 @@
 .modal {
     max-width: 1200px !important;
 }
+.home-prompts{
+    height: calc(100vh - 350px) !important;
+}

@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="flex gap-2 w-full h-full min-h-screen relative">
             <LeftNavbar></LeftNavbar>
-            <div className="w-full h-full relative flex flex-col">
+            <div className="w-full h-full max-h-screen overflow-auto relative flex flex-col">
                 <TopNavbar></TopNavbar>
 
                 <Outlet></Outlet>
