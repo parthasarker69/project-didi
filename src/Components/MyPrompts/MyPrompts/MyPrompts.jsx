@@ -150,9 +150,9 @@ const MyPrompts = () => {
     ]
 
     return (
-        <div className="grow max-h-screen rest-screen-my-prompts mt-5 overflow-hidden">
+        <div className="grow max-h-screen rest-screen-my-prompts mt-[30px] overflow-hidden">
             <div className="flex h-full">
-                <div className="w-1/4 h-full mt-[15px]">
+                <div className="w-1/4 h-full">
                     <div>
                         <h1 className="flex gap-3 text-[24px] font-extrabold items-center mb-[25px] ms-[10px]"> <AiOutlineStar className="font-extrabold "></AiOutlineStar>Meine Prompts </h1>
                     </div>

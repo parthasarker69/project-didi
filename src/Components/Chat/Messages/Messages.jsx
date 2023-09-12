@@ -67,7 +67,6 @@ const messages = [
 
     }
     
-    
 ]
 
 export default function MenuDefault() {

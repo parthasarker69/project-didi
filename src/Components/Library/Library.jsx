@@ -134,7 +134,7 @@ const Library = () => {
     ]
     return (
         <div className="mx-4 relative h-full max-h-screen overflow-hidden">
-            <div className="mt-5 z-50 bg-white">
+            <div className="mt-[30px] z-50 bg-white">
                 <h1 className="flex gap-[15px] items-center text-[25px]"> <FiBook></FiBook> <span className="text-[25px] font-extrabold	">Bibliothek - Start-Click-Prompt </span>
                 </h1>
                 <Categories></Categories>
